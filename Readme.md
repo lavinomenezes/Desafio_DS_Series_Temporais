@@ -161,6 +161,8 @@ Apesar do auto_arima ter performado melhor que o simple_smoothing, a diferença 
 # Resultados da previsão
 O arquivo com os valores previstos pelo modelo foi nomeado de `predicted.csv`. E foi salvo na pasta [data](https://github.com/lavinomenezes/Desafio_DS_Series_Temporais/tree/main/data)
 
+Na pasta [images/predictions](https://github.com/lavinomenezes/Desafio_DS_Series_Temporais/tree/main/images/predictions) estão os gráficos de previsão para cada país e região. com a plotagem dos dados previsto e os dados de teste
+
 # Conclusão
 
 Preve séries temporais já é um desafio por si só, prever o GDP de cada país é um desafio extra pela alta volatilidade dos dados, além de serem dados que não possuem uma sazonalidade definida, e que podem ser influenciados por diversos fatores externos, como crises econômicas, guerras, pandemias, etc. 
@@ -222,8 +224,6 @@ Para executar o projeto é necessário seguir os seguintes passos:
 - Git
 - Github
 
-
-# Referências
 
 
 
