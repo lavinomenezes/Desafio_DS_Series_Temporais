@@ -47,7 +47,7 @@ Para os outros países a susbstituição será feita da seguinte maneria:
 <ul>
 
 - Foi utilizada o modo de decomposição aditivo;
-- Dentro da pasta [images](https://github.com/lavinomenezes/Desafio_DS_Series_Temporais/tree/main/images) estão todas as imagens geradas durante a análise de decomposição sazonal dos dados.
+- Dentro da pasta [images/decomposition](https://github.com/lavinomenezes/Desafio_DS_Series_Temporais/tree/main/images/decomposition) estão todas as imagens geradas durante a análise de decomposição sazonal dos dados.
 </ul>
 
 5. **Teste de estacionariedade:** Para observar se os dados são estacionários foi utilizado o teste de Dickey-Fuller aumentado 
