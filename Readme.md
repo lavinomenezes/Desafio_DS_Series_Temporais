@@ -135,6 +135,8 @@ Para o cross validation fou utilizada a ferramenta TimeSeriesSplit do sklearn, q
 - Max MAE for all countrys: 21.96
 - Min MAE for all countrys: 1.05
 - CV MAE for all countrys: 0.63
+ 
  distribuião das médias de MAE para cada modelo:
- [](https://github.com/lavinomenezes/Desafio_DS_Series_Temporais/blob/main/images/distribuicao_das_medias_para_o_simple_smoothing.png)
+ 
+ ![](https://github.com/lavinomenezes/Desafio_DS_Series_Temporais/blob/main/images/distribuicao_das_medias_para_o_simple_smoothing.png)
 
