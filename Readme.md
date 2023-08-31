@@ -127,7 +127,9 @@ Mas para uma melhor analise de performace foi feito um cross validation para os 
 
 ## cross validation 
 
-Para o cross validation fou utilizada a ferramenta TimeSeriesSplit do sklearn, que permite fazer o cross validation para dados de series temporais. Aplicado o cross validation para cada país individual e calculado a média das métrica para ao final calcular a média de cada MAE média do cross validation para cada modelo. Assim os resultados foram 
+Para o cross validation fou utilizada a ferramenta TimeSeriesSplit do sklearn, que permite fazer o cross validation para dados de series temporais. Aplicado o cross validation para cada país individual e calculado a média das métrica para ao final calcular a média de cada MAE média do cross validation para cada modelo. Assim os resultados foram:
+
+Simple Smoothing:
 
 - Mean MAE for all countrys: 3.75
 - Median MAE for all countrys: 3.05
@@ -136,7 +138,22 @@ Para o cross validation fou utilizada a ferramenta TimeSeriesSplit do sklearn, q
 - Min MAE for all countrys: 1.05
 - CV MAE for all countrys: 0.63
  
- distribuião das médias de MAE para cada modelo:
+ distribuição das médias de MAE para o simple smoothing:
  
  ![](https://github.com/lavinomenezes/Desafio_DS_Series_Temporais/blob/main/images/distribuicao_das_medias_para_o_simple_smoothing.png)
+
+Auto Arima:
+
+- Mean MAE for all countrys: 3.61
+- Median MAE for all countrys: 3.02
+- Std MAE for all countrys: 2.23
+- Max MAE for all countrys: 19.5
+- Min MAE for all countrys: 1.09
+- CV MAE for all countrys: 0.61
+
+distribuição das médias de MAE para o auto arima:
+![](https://github.com/lavinomenezes/Desafio_DS_Series_Temporais/blob/main/images/distribuicao_das_medias_para_o_auto_arima.png)
+
+Apesar do auto_arima ter performado melhor que o simple_smoothing, a diferença entre eles é muito pequena, e o simple_smoothing é um modelo mais simples e rápido de ser treinado, além de ser mais fácil de lidar com os parametros, por isso foi escolhido o **simple_smoothing como modelo final**.
+
 
