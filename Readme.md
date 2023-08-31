@@ -19,7 +19,7 @@ O objetivo é prever o crescimento do índice GDP de cada país nos anos de 2024
 
 1. **Entendimento do problema:** Observando o conjunto de dados e buscar entender o comportamento dos dados, como estão distribuídos, se há valores faltantes, se há outliers, etc.
 
-2. **Coleta de dados:** dados disponíveis no formato excel.
+2. **Coleta de dados:** dados disponíveis no formato excel, arquivo que está disponível na pasta [data](https://github.com/lavinomenezes/Desafio_DS_Series_Temporais/tree/main/data) nomeado de `imf-dm-export-20230513.xlsgi`.
 
 4. **Análise gráfica:** Os dados dos países foram plotados em gráficos de linha para observar o comportamento dos dados ao longo do tempo, além de observar a distribuição dos dados e a presença de outliers. A análise foi executada por grupos de países, para visualizar quais tinham comportamentos semelhantes, para auxiliar na substituição dos valores nulos.
 
@@ -159,7 +159,7 @@ distribuição das médias de MAE para o auto arima:
 Apesar do auto_arima ter performado melhor que o simple_smoothing, a diferença entre eles é muito pequena, e o simple_smoothing é um modelo mais simples e rápido de ser treinado, além de ser mais fácil de lidar com os parametros, por isso foi escolhido o **simple_smoothing como modelo final**.
 
 # Resultados da previsão
-O arquivo com os valores previstos pelo modelo foi nomeado de 'predicted.csv'. E foi salvo na pasta [data](https://github.com/lavinomenezes/Desafio_DS_Series_Temporais/tree/main/data)
+O arquivo com os valores previstos pelo modelo foi nomeado de `predicted.csv`. E foi salvo na pasta [data](https://github.com/lavinomenezes/Desafio_DS_Series_Temporais/tree/main/data)
 
 # Conclusão
 
@@ -216,8 +216,8 @@ Para executar o projeto é necessário seguir os seguintes passos:
 
 - Jupiter Notebook
 - Pandas
-- Statsmodels
-- Facebook Prophet
+- [Statsmodels](https://www.statsmodels.org/stable/index.html)
+- [Facebook Prophet](https://facebook.github.io/prophet/)
 - Scikit Learn
 - Git
 - Github
