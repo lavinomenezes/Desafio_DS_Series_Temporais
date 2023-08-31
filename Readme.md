@@ -66,6 +66,7 @@ Para os outros países a susbstituição será feita da seguinte maneria:
 - auto_arima 
 - Facebook Prophet
 
+
 Todos os modelos foram treinados com os dados de 1980 a 2023 e testados com os dados de 2024 a 2028, para observar a acurácia de cada modelo.
 
 Ao final o modelo escolhido foi o **Simple Exponential Smoothing**, pois foi o modelo que obteve a melhor acurácia, além de ser o modelo mais simples e rápido de ser treinado.
@@ -125,7 +126,7 @@ O modelo com a melhor performance foi o **Simple Exponential Smoothing**, pois o
 
 Mas para uma melhor analise de performace foi feito um cross validation para os modelos auto_arima e simple_smoothing, para observar se os resultados se mantinham consistentes.
 
-## cross validation 
+## Cross validation 
 
 Para o cross validation fou utilizada a ferramenta TimeSeriesSplit do sklearn, que permite fazer o cross validation para dados de series temporais. Aplicado o cross validation para cada país individual e calculado a média das métrica para ao final calcular a média de cada MAE média do cross validation para cada modelo. Assim os resultados foram:
 
@@ -157,4 +158,74 @@ distribuição das médias de MAE para o auto arima:
 
 Apesar do auto_arima ter performado melhor que o simple_smoothing, a diferença entre eles é muito pequena, e o simple_smoothing é um modelo mais simples e rápido de ser treinado, além de ser mais fácil de lidar com os parametros, por isso foi escolhido o **simple_smoothing como modelo final**.
 
+# Resultados da previsão
+O arquivo com os valores previstos pelo modelo foi nomeado de 'predicted.csv'. E foi salvo na pasta [data](https://github.com/lavinomenezes/Desafio_DS_Series_Temporais/tree/main/data)
+
+# Conclusão
+
+Preve séries temporais já é um desafio por si só, prever o GDP de cada país é um desafio extra pela alta volatilidade dos dados, além de serem dados que não possuem uma sazonalidade definida, e que podem ser influenciados por diversos fatores externos, como crises econômicas, guerras, pandemias, etc. 
+
+O projeto se dedicou a tentar ao máximo prever os valores dos pŕoximos anos mas tendo cosciência que os resultados podem ser diferentes do previsto.
+
+# Como executar o projeto
+
+Para executar o projeto é necessário seguir os seguintes passos:
+
+1. Clonar o repositório
+
+`git clone https://github.com/lavinomenezes/Desafio_DS_Series_Temporais.git`
+
+2. Criar um ambiente virtual
+
+`python -m venv venv`
+
+3. Ativar o ambiente virtual
+
+`source venv/bin/activate`
+
+4. Instalar as dependências
+
+`pip install -r requirements.txt`
+
+5. Executar o jupyter notebook
+
+`jupyter notebook`
+
+ - Para executar o preenchimento dos dados faltantes e a modelagem dos dados, executar os arquivos 
+ <ul>
+
+ - desafio_ds_v01_01_data_description.ipynb
+    - como saída o arquivo csv `df_fill.csv` é gerado com dados dos países e regiões com valores nulos preenchidos.
+ - desafio_ds_v01_02_time_series_analyses.ipynb
+    - como saída o arquivo csv `df_countrys_paramns.csv` é grado com parametrso paar cada país e região.
+</ul>
+
+- Para executar a previsão dos dados, executar o arquivo
+<ul>
+
+- desafio_ds_v01_03_predict.ipynb
+    - como saída o arquivo csv `predicted.csv` é gerado com os valores previstos pelo modelo.
+</ul>
+
+# Próximos passos
+
+- Testar outros modelos de time series;
+- incluir dados externos para melhorar a previsão;
+
+# Ferramentas utilizadas
+
+- Jupiter Notebook
+- Pandas
+- Statsmodels
+- Facebook Prophet
+- Scikit Learn
+- Git
+- Github
+
+
+# Referências
+
+
+
+    
 
