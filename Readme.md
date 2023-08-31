@@ -152,6 +152,7 @@ Auto Arima:
 - CV MAE for all countrys: 0.61
 
 distribuição das médias de MAE para o auto arima:
+
 ![](https://github.com/lavinomenezes/Desafio_DS_Series_Temporais/blob/main/images/distribuicao_das_medias_para_o_auto_arima.png)
 
 Apesar do auto_arima ter performado melhor que o simple_smoothing, a diferença entre eles é muito pequena, e o simple_smoothing é um modelo mais simples e rápido de ser treinado, além de ser mais fácil de lidar com os parametros, por isso foi escolhido o **simple_smoothing como modelo final**.
