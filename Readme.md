@@ -129,4 +129,12 @@ Mas para uma melhor analise de performace foi feito um cross validation para os 
 
 Para o cross validation fou utilizada a ferramenta TimeSeriesSplit do sklearn, que permite fazer o cross validation para dados de series temporais. Aplicado o cross validation para cada país individual e calculado a média das métrica para ao final calcular a média de cada MAE média do cross validation para cada modelo. Assim os resultados foram 
 
+- Mean MAE for all countrys: 3.75
+- Median MAE for all countrys: 3.05
+- Std MAE for all countrys: 2.37
+- Max MAE for all countrys: 21.96
+- Min MAE for all countrys: 1.05
+- CV MAE for all countrys: 0.63
+ distribuião das médias de MAE para cada modelo:
+ [](https://github.com/lavinomenezes/Desafio_DS_Series_Temporais/blob/main/images/distribuicao_das_medias_para_o_simple_smoothing.png)
 
